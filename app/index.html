@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Rock+Salt' rel='stylesheet' type='text/css'>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="scripts/app.js"></script>
+
+<title>To-Do List</title>
+
+</head>
+
+
+<body>
+	
+<div id="newList" class="new-list-header">
+			To Do<sub class="sub"> *or not to do!</sub>
+		</div>
+	<div class="wrapper">
+		<div class="panel">
+			In Progress
+			<ul class="list-group" id="currentList"></ul>
+		</div>
+		<div class="panel">
+			Archived
+			<ul class="list-group" id="archivedList"></ul>
+		</div>
+	</div>
+
+	<div class="header-wrapper">
+		<div class='new-item-header'>
+			<button href="#" class="pull-right pencil" id="newListItem" style="">Add Item</button>
+		</div>
+		
+	</div>
+
+	<form id="newTaskForm">
+    <label>New Item</label>
+  	<input id="newItemInput" placeholder="new task">
+  	<button id="saveNewItem">Save</button>
+  	<button id="cancel">Cancel</button>
+ </form>
+
+</body>
+
+
+</html>
